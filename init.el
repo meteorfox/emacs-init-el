@@ -13,6 +13,9 @@
 (tool-bar-mode -1)
 
 
+;; Disable backup files (foo.bar~ files)
+(setq make-backup-files nil)
+
 ;; Activate ido-mode
 (require 'ido)
 (ido-mode t)
