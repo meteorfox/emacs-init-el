@@ -22,3 +22,11 @@
 
 ;; Load monokai theme
 (load-theme 'monokai t)
+
+;; paredit
+(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'nrepl-mode-hook 'paredit-mode)
+(global-set-key [f7] 'paredit-mode)
+
+;; rainbow delimiters
+(global-rainbow-delimiters-mode)
